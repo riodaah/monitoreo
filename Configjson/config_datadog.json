@@ -1,0 +1,41 @@
+{
+   "DEV": {
+      "BASE_TAGS": ["host:10.145.86.196",
+                      "env:prod",
+                      "team:mc_txd",
+                      "sre_team:sre_txd",
+                      "cc-name:C029006006 Gestion Tecnologica TI",
+                      "cc-id:1890",
+                      "country:cl",
+                      "bs-dom:stro",
+                      "bs-cap:stra",
+                      "ind:rtl",
+                      "bu:fal",
+                      "retention:3d"],
+     "DD-SITE": "datadoghq.com",
+     "DD-API-KEY": "50bccb1bb11b33d07a4855056fb53a3c"
+  
+     
+   },
+   "TEST": {
+      "BASE_TAGS": [],
+      "DD-SITE": "",
+      "DD-API-KEY": ""    
+   },
+   "PRODUCTION": {
+      "BASE_TAGS": ["host:10.145.86.196",
+                      "env:prod",
+                      "team:mc_txd",
+                      "sre_team:sre_txd",
+                      "cc-name:C029006006 Gestion Tecnologica TI",
+                      "cc-id:1890",
+                      "country:cl",
+                      "bs-dom:stro",
+                      "bs-cap:stra",
+                      "ind:rtl",
+                      "bu:fal",
+                      "retention:3d"],
+     "DD-SITE": "datadoghq.com",
+     "DD-API-KEY": "50bccb1bb11b33d07a4855056fb53a3c"
+   }
+}

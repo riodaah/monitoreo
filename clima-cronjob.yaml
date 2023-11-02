@@ -1,0 +1,15 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: api-cronjob
+spec:
+  schedule: "0 * * * *" # Esto ejecutará el job cada hora, en el minuto 0. Puedes ajustar la cron expression según tus necesidades.
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: clima-container
+            image: us-east4-docker.pkg.dev/datadog-test-400117/imagenes-clima/climadatadog
+            # Agrega aquí cualquier otra configuración específica de tu contenedor, si la necesitas.
+          restartPolicy: OnFailure

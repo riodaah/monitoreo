@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cronjob
+  namespace: mi-namespace
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: mi-contenedor
+            image: us-east4-docker.pkg.dev/datadog-test-400117/imagenes-clima/bookings:latest
+            args:
+            - python
+            - /app/bookings.py
+          restartPolicy: OnFailure
